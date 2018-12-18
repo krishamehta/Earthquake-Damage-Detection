@@ -1,0 +1,28 @@
+<annotation verified="yes">
+	<folder>images</folder>
+	<filename>CanterburyNZSeries2010_04a.JPG</filename>
+	<size>
+		<width>400</width>
+		<height>536</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Shear/diagonal failure Short/captive column</name>
+		<bndbox>
+			<xmin>133</xmin>
+			<ymin>163</ymin>
+			<xmax>262</xmax>
+			<ymax>394</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>Shattering Glass Window</name>
+		<bndbox>
+			<xmin>253</xmin>
+			<ymin>221</ymin>
+			<xmax>374</xmax>
+			<ymax>379</ymax>
+		</bndbox>
+	</object>
+</annotation>
