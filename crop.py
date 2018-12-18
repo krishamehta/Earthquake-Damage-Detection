@@ -1,6 +1,7 @@
 import PIL
 from PIL import Image, ImageTk # for windows is this option , ImageGrab
-import tkFileDialog
+#import tkFileDialog
+from tkinter import filedialog
 import os
 
 # open a file chooser dialog and allow the user to select an input
@@ -8,20 +9,20 @@ opts = {}
 opts['filetypes'] =[('Supported types',('.jpeg','.jpg','.JPG','.JPEG')),
                              ('EEG files','.eeg'),('all files','.*')]
         
-path1 = tkFileDialog.askdirectory(title = "Select Input Folder")
+path1 = filedialog.askdirectory(title = "Select Input Folder")
 #if path1 == '': return
-print path1    
+print (path1)    
 
-path2 = tkFileDialog.askdirectory(title = "Select Output Folder")
+path2 = filedialog.askdirectory(title = "Select Output Folder")
 #if path2 == '': return
-print path2  
+print (path2)  
 
 basewidth= int(input("Please enter reduction factor for your image (100-half size, 200-quarter size, 300...): "))
-
+#basewidth= int(filedialog.askdirectory(title ="Please enter reduction factor for your image (100-half size, 200-quarter size, 300...): "))
 listing = os.listdir(path1)  
-print listing  
+print (listing)  
 for file in listing:
-    img = Image.open(path1 +'/' +file) 
+    img = Image.open(path1 +'/' + file) 
     #basewidth=100  
     wpercent = (basewidth/float(img.size[0]))
     hsize = int((float(img.size[1])*float(wpercent)))

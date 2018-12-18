@@ -5,15 +5,15 @@ import csv
 from collections import Counter
 import numpy as np
 import matplotlib.pyplot as plt
-import tkFileDialog
+from tkinter import filedialog
 
 #ask for st file
 opts = {}
 opts['filetypes'] = [('Supported types',('.txt'))]
 
-hist= tkFileDialog.askopenfilename(title='Enter File to create histogram',**opts)
+hist= filedialog.askopenfilename(title='Enter File to create histogram',**opts)
 if hist == '': 
-	print "can't open file"
+	print ("can't open file")
 	quit()
 searchDMstrings = ("Shear cracking", "Flexural cracking","Concrete spalling","Concrete core crushing","Longitudinal bar buckling", "Longitudinal bar fracture","Failure of confining hoops/ties","Anchorage/connection failure","Lap splice failure", "Distributed plastic hinging","Concentrated flexural cracking","Global buckling/instability","Shear/diagonal failure", "Shear/compression failure","Interface sliding","Interaction b/w infill and frame","Slab fracture","Punching shear failure","Unseating/collapse of stairs","Pounding","Differential settlement","Residual displacement","soft story fail","Partial/full collapse")
 
