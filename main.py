@@ -1,5 +1,6 @@
 # import the necessary packages
-import Tkinter as tk
+import tkinter as tk
+from tkinter import *
 from PIL import Image
 from PIL import ImageTk
 import os

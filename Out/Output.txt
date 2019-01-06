@@ -7,3 +7,16 @@ rect:253 221 374 379 Shattering Glass Window
 Baja2010_03.JPG
 Bingol2003_01.gif
 Bingol2003_05.png
+Baja2010_01.jpg
+rect:161 54 318 216 roadway Structure Label
+Bingol2003_05.png
+rect:84 56 389 260 roadway landslide/rockslide
+Baja2010_01.jpg
+Baja2010_01.jpg
+Bingol2003_05.png
+Baja2010_01.jpg
+Bingol2003_05.png
+Baja2010_01.jpg
+Bingol2003_01.gif
+CanterburyNZSeries2010_09a.JPG
+Christchurch2011_01a.png
